@@ -24,7 +24,60 @@ body {
 }
 
 .hero-page {
+  background: rgb(225, 255, 143);
   width: 1440px;
   height: 800px;
-  background: rgb(225, 255, 143);
+}
+
+.hero-page__title {
+  width: 769px;
+  height: 156px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: rgb(32, 32, 39);
+  font-family: "Montserrat";
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-top: 196px;
+}
+
+.hero-page__subtitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: rgb(32, 32, 39);
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: undefined;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-top: 24px;
+}
+
+.hero-page__button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10;
+  padding: 16px 28px 16px 28px;
+  box-sizing: border-box;
+  border: 1px solid rgb(32, 32, 39);
+  border-radius: 60px;
+  background: rgb(32, 32, 39);
+  color: rgb(255, 255, 255);
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: center;
+  width: 247px;
+  height: 66px;
+  margin-top: 48px;
 }/*# sourceMappingURL=style.css.map */
