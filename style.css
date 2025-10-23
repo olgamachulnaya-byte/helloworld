@@ -27,6 +27,79 @@ body {
   background: rgb(225, 255, 143);
   width: 1440px;
   height: 800px;
+  position: relative;
+}
+
+.hero-page__img2 {
+  position: absolute;
+  top: 94px;
+  left: 63px;
+}
+
+.hero-page__img {
+  position: absolute;
+  top: 69px;
+  left: 156px;
+}
+
+.hero-page__img3 {
+  position: absolute;
+  top: -333px;
+  right: -488px;
+  left: 929px;
+}
+
+.hero-page__img4 {
+  position: absolute;
+  top: -10px;
+  right: 269px;
+  left: 854px;
+}
+
+.hero-page__img5 {
+  position: absolute;
+  top: 254px;
+  left: 1067px;
+  right: 231px;
+}
+
+.hero-page__img6 {
+  position: absolute;
+  top: 379px;
+  left: 1225px;
+  right: 5px;
+}
+
+.hero-page__img8 {
+  position: absolute;
+  top: 468px;
+  left: 1247px;
+  right: 113px;
+}
+
+.hero-page__img7 {
+  position: absolute;
+  top: 663px;
+  left: 1347px;
+  right: 61px;
+}
+
+.hero-page__img9 {
+  position: absolute;
+  top: 538px;
+  left: 948px;
+  right: 455px;
+}
+
+.hero-page__img10 {
+  position: absolute;
+  top: 568px;
+  left: 1013px;
+  right: 344px;
+}
+
+.header {
+  padding-top: 194px;
 }
 
 .hero-page__title {
@@ -42,7 +115,6 @@ body {
   line-height: 100%;
   letter-spacing: 0px;
   text-align: left;
-  padding-top: 196px;
 }
 
 .hero-page__subtitle {
@@ -80,4 +152,21 @@ body {
   width: 247px;
   height: 66px;
   margin-top: 48px;
+}
+
+.strip {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10;
+  margin-top: 190px;
+  margin-left: -300px;
+  margin-right: -1500px;
+  padding: 27px 49px 27px 49px;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  background: rgb(188, 236, 48);
 }/*# sourceMappingURL=style.css.map */
