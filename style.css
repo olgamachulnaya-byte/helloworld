@@ -1,0 +1,333 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+input,
+button {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+.hero-page {
+  background: rgb(225, 255, 143);
+  width: 1440px;
+  height: 800px;
+  position: relative;
+}
+
+.hero-page__img2 {
+  position: absolute;
+  top: 94px;
+  left: 63px;
+}
+
+.hero-page__img {
+  position: absolute;
+  top: 69px;
+  left: 156px;
+}
+
+.hero-page__img3 {
+  position: absolute;
+  top: -333px;
+  right: -488px;
+  left: 929px;
+}
+
+.hero-page__img4 {
+  position: absolute;
+  top: -10px;
+  right: 269px;
+  left: 854px;
+}
+
+.hero-page__img5 {
+  position: absolute;
+  top: 254px;
+  left: 1067px;
+  right: 231px;
+}
+
+.hero-page__img6 {
+  position: absolute;
+  top: 379px;
+  left: 1225px;
+  right: 5px;
+}
+
+.hero-page__img8 {
+  position: absolute;
+  top: 468px;
+  left: 1247px;
+  right: 113px;
+}
+
+.hero-page__img7 {
+  position: absolute;
+  top: 663px;
+  left: 1347px;
+  right: 61px;
+}
+
+.hero-page__img9 {
+  position: absolute;
+  top: 538px;
+  left: 948px;
+  right: 455px;
+}
+
+.hero-page__img10 {
+  position: absolute;
+  top: 568px;
+  left: 1013px;
+  right: 344px;
+}
+
+.header {
+  padding-top: 194px;
+}
+
+.header-title {
+  width: 769px;
+  height: 156px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: rgb(32, 32, 39);
+  font-family: "Montserrat";
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.header-subtitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: rgb(32, 32, 39);
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: undefined;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-top: 24px;
+}
+
+.header-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10;
+  padding: 16px 28px 16px 28px;
+  box-sizing: border-box;
+  border: 1px solid rgb(32, 32, 39);
+  border-radius: 60px;
+  background: rgb(32, 32, 39);
+  color: rgb(255, 255, 255);
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: center;
+  width: 247px;
+  height: 66px;
+  margin-top: 48px;
+}
+
+.strip {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10;
+  margin-top: 190px;
+  margin-left: -300px;
+  margin-right: -1500px;
+  padding: 27px 49px 27px 49px;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  background: rgb(188, 236, 48);
+}
+
+.content {
+  background: rgb(32, 32, 39);
+  width: 1440px;
+  height: 1870px;
+  position: relative;
+}
+
+.content-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  font-family: "Montserrat";
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: left;
+  width: 314px;
+  height: 78px;
+  padding-top: 94px;
+}
+
+.content-subtitle {
+  width: 788px;
+  height: 96px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-top: 24px;
+}
+
+.content-star {
+  position: absolute;
+  top: 77px;
+  left: 933px;
+  right: -143px;
+}
+
+.content-star2 {
+  position: absolute;
+  top: 770px;
+  left: 25px;
+  right: 1381px;
+}
+
+.content-star3 {
+  position: absolute;
+  top: 822px;
+  left: 40px;
+  right: 1341px;
+}
+
+.igra {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.igra-mini {
+  margin-top: 72px;
+  border-radius: 30px;
+  box-shadow: 0px 12.6122951508px 42.2511901855px -7.57px rgba(0, 0, 0, 0.13);
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 378px;
+  height: 473px;
+}
+
+.igra-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10;
+  padding: 32px 32px 36px 32px;
+  border-radius: 30px;
+}
+
+.igra-nomer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  color: rgb(32, 32, 39);
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 8px 16px 10px 16px;
+  border-radius: 52.58px;
+  background: rgb(247, 247, 247);
+}
+
+.igra-name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: rgb(32, 32, 39);
+  font-family: "Montserrat";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-top: 16px;
+}
+
+.igra-mini2 {
+  margin-top: 72px;
+  border-radius: 30px;
+  box-shadow: 0px 12.6122951508px 42.2511901855px -7.57px rgba(0, 0, 0, 0.13);
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 378px;
+  height: 512px;
+}
+
+.igra-mini3 {
+  border-radius: 30px;
+  box-shadow: 0px 12.6122951508px 42.2511901855px -7.57px rgba(0, 0, 0, 0.13);
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 378px;
+  height: 551px;
+  margin-top: -32px;
+}
+
+.igra-mini4 {
+  border-radius: 30px;
+  box-shadow: 0px 12.6122951508px 42.2511901855px -7.57px rgba(0, 0, 0, 0.13);
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 378px;
+  height: 512px;
+}/*# sourceMappingURL=style.css.map */
