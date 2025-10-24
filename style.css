@@ -206,12 +206,13 @@ body {
 .content {
   background: rgb(32, 32, 39);
   width: 1440px;
-  height: 1870px;
+  height: 1470px;
   position: relative;
   z-index: 0;
 }
 
 .content-title {
+  padding-top: 56px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -381,4 +382,159 @@ body {
   align-items: flex-start;
   width: 378px;
   height: 512px;
+}
+
+.mini-igri {
+  position: relative;
+  width: 1440px;
+  height: 3500px;
+  background: rgb(32, 32, 39);
+}
+
+.mini-igri__star {
+  position: absolute;
+  top: 94px;
+  left: 1277px;
+  right: 124px;
+}
+
+.mini-igri__star2 {
+  position: absolute;
+  top: 126px;
+  left: 1320px;
+  right: 45px;
+}
+
+.mini-igri__star3 {
+  position: absolute;
+  top: 3366px;
+  left: 1319px;
+  right: 52px;
+}
+
+.mini-igri__star4 {
+  position: absolute;
+  top: 3414px;
+  left: 1249px;
+  right: 150px;
+}
+
+.mini-igri__title {
+  color: rgb(255, 255, 255);
+  font-family: "Montserrat";
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: left;
+  width: 400px;
+  height: 78px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 56px;
+}
+
+.mini-igri__igra1 {
+  margin-top: 72px;
+  width: 1200px;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row-reverse;
+  border-radius: 30px;
+  box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
+  background: rgb(255, 255, 255);
+}
+
+.mini-igri__igra {
+  margin-top: 32px;
+  width: 1200px;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row-reverse;
+  border-radius: 30px;
+  box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
+  background: rgb(255, 255, 255);
+}
+
+.mini-igri__igra2 {
+  margin-top: 32px;
+  width: 1200px;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-radius: 30px;
+  box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
+  background: rgb(255, 255, 255);
+}
+
+.mini-igra__img {
+  width: 600px;
+  height: 500px;
+}
+
+.mini-igri__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10;
+  padding: 48px;
+  width: 600px;
+  height: 500px;
+}
+
+.mini-igra__name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: rgb(32, 32, 39);
+  font-family: "Montserrat";
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.mini-igra__infor {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: rgb(32, 32, 39);
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-top: 24px;
+}
+
+.mini-igri__button {
+  display: flex;
+  color: rgb(255, 255, 255);
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10;
+  padding: 16px 28px 16px 28px;
+  border-radius: 60px;
+  background: rgb(32, 32, 39);
+  margin-top: 36px;
+  width: 247px;
 }/*# sourceMappingURL=style.css.map */
