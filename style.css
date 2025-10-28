@@ -387,6 +387,7 @@ body {
 .mini-igri {
   position: relative;
   background: rgb(32, 32, 39);
+  padding-bottom: 134px;
 }
 
 .mini-igri__star {
@@ -530,6 +531,27 @@ body {
   background: rgb(32, 32, 39);
   margin-top: 36px;
   width: 247px;
+}
+
+.footer {
+  background: rgb(189, 237, 53);
+  overflow: hidden;
+}
+
+.footer-text {
+  color: rgb(0, 0, 0);
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 150px;
+  width: 100%;
+  justify-content: space-around;
 }
 
 @media (max-width: 1024px) {
@@ -790,5 +812,18 @@ body {
     letter-spacing: 0%;
     text-align: center;
     background-color: white;
+  }
+  .footer {
+    height: 100px;
+  }
+  .footer-text {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    display: grid;
+    margin-top: 40px;
+    align-content: space-between;
   }
 }/*# sourceMappingURL=style.css.map */
