@@ -1,8 +1,3 @@
 
-
-const user {
-    name:"Шарик",
-    age:"1",
-    isAdmin:true,
-}
- 
+let name = prompt('Как вас зовут?');
+alert(`Привет, ${name}!`);
