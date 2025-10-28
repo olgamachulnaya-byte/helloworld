@@ -5,11 +5,12 @@ let sum = a + b;
 let difference =a - b;
 let product = a*b;
 let quotient =a/b;
+let result = b**5;
 alert(sum,);
 alert(difference);
 alert(product)
 alert(quotient);
-
+alert(result);
 
 
 
