@@ -26,8 +26,6 @@ body {
 
 .hero-page {
   background: rgb(225, 255, 143);
-  width: 1440px;
-  height: 800px;
   position: relative;
 }
 
@@ -176,7 +174,7 @@ body {
   gap: 51px;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 10;
+  gap: 10px;
   margin-top: 155px;
   margin-left: -300px;
   margin-right: -1500px;
@@ -209,7 +207,6 @@ body {
 
 .content {
   background: rgb(32, 32, 39);
-  width: 1440px;
   height: 1470px;
   position: relative;
   z-index: 0;
@@ -233,7 +230,6 @@ body {
 }
 
 .content-subtitle {
-  width: 788px;
   height: 96px;
   display: flex;
   flex-direction: row;
@@ -390,8 +386,6 @@ body {
 
 .mini-igri {
   position: relative;
-  width: 1440px;
-  height: 3500px;
   background: rgb(32, 32, 39);
 }
 
@@ -441,12 +435,11 @@ body {
 
 .mini-igri__igra1 {
   margin-top: 72px;
-  width: 1200px;
-  height: 500px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
+  justify-content: space-between;
   flex-direction: row-reverse;
   border-radius: 30px;
   box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
@@ -455,11 +448,9 @@ body {
 
 .mini-igri__igra {
   margin-top: 32px;
-  width: 1200px;
-  height: 500px;
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
-  justify-content: flex-start;
   align-items: flex-start;
   flex-direction: row-reverse;
   border-radius: 30px;
@@ -490,10 +481,8 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 10;
+  gap: 10px;
   padding: 48px;
-  width: 600px;
-  height: 500px;
 }
 
 .mini-igra__name {
@@ -520,7 +509,7 @@ body {
   line-height: 32px;
   letter-spacing: 0px;
   text-align: left;
-  margin-top: 24px;
+  padding-top: 24px;
 }
 
 .mini-igri__button {
@@ -568,8 +557,7 @@ body {
   }
   .hero-page__img3 {
     top: -104px;
-    left: 188px;
-    width: 223.52px;
+    left: 230px;
     height: 238.57px;
   }
   .hero-page__img4 {
@@ -618,9 +606,7 @@ body {
     margin-left: 57px;
   }
   .header-subtitle {
-    width: 296px;
     height: 60px;
-    display: flex;
     flex-direction: row;
     align-items: center;
     color: rgb(32, 32, 39);
@@ -630,7 +616,6 @@ body {
     line-height: 100%;
     letter-spacing: 0px;
     text-align: center;
-    margin-left: 41px;
     margin-top: -24px;
   }
   .header-button {
@@ -668,7 +653,6 @@ body {
     height: 19.34px;
   }
   .strip-text {
-    width: 146px;
     height: 18px;
     display: flex;
     flex-direction: row;
@@ -701,18 +685,25 @@ body {
     margin-left: 16px;
   }
   .mini-igri__igra1 {
+    height: 100%;
     width: 343px;
-    height: 528.63px;
     margin-left: 16px;
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
   .mini-igra__img {
     width: 343px;
+    border-radius: 30px;
     height: 284.93px;
   }
   .mini-igra__name {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     color: rgb(32, 32, 39);
     font-family: "Montserrat";
     font-size: 32px;
@@ -720,5 +711,84 @@ body {
     line-height: 100%;
     letter-spacing: 0px;
     text-align: left;
+  }
+  .mini-igri__igra2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 343px;
+    margin-left: 16px;
+    height: 100%;
+    border-radius: 30px;
+  }
+  .mini-igri__igra {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 343px;
+    margin-left: 16px;
+    border-radius: 30px;
+    height: 100%;
+  }
+  .mini-igri__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 29px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .mini-igra__infor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-top: 6px;
+  }
+  .mini-igri__button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10;
+    padding: 16px 28px 16px 28px;
+    box-sizing: border-box;
+    border: 1px solid rgb(32, 32, 39);
+    text-align: center;
+    border-radius: 60px;
+    background: rgb(32, 32, 39);
+    width: 285px;
+    height: 55px;
+    color: rgb(255, 255, 255);
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0%;
+    margin-top: 22px;
+  }
+  .header-button:hover {
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 60px;
+    color: rgb(0, 0, 0);
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    background-color: white;
   }
 }/*# sourceMappingURL=style.css.map */
