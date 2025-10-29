@@ -46,7 +46,16 @@ const user {
     name:"Шарик",
     age:"1",
     isAdmin:true,
-}
+};
 
 let name = prompt('Как вас зовут?');
 alert(`Привет, ${name}!`);
+
+
+let password = 'мой_сложный_пароль';
+let userInput = prompt('Введите пароль');
+if (userInput === password) {
+    alert('Пароль введен верно'); 
+} else {
+    alert('Пароль введен неправильно'); 
+}
