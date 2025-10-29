@@ -25,10 +25,11 @@ let b = 2;
 let result = b**5;
 alert(result);
 
-let c = 9;
+let k = 9;
 let d = 2;
-let quotient =a%b;
-alert(quotient);
+let remainder =k%d;
+alert(remainder);
+
 
 let num = 1;
 num += 5;
@@ -52,10 +53,38 @@ let name = prompt('Как вас зовут?');
 alert(`Привет, ${name}!`);
 
 
-let password = 'мой_сложный_пароль';
+let password = 'мой сложный пароль';
 let userInput = prompt('Введите пароль');
 if (userInput === password) {
     alert('Пароль введен верно'); 
 } else {
     alert('Пароль введен неправильно'); 
+}
+
+let c = 0;
+
+if(c > 0 && c < 10){
+    console.log('Верно');
+}else{
+    console.log('Неверно');
+}
+
+if(c > 0 && c < 10){
+    console.log('Верно');
+}else{
+    console.log('Неверно');
+}
+
+c = -3;
+if(c > 0 && c < 10){
+    console.log('Верно');
+}else{
+    console.log('Неверно');
+}
+
+c = 2;
+if(c > 0 && c < 10){
+    console.log('Верно');
+}else{
+    console.log('Неверно');
 }
