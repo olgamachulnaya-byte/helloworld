@@ -10,19 +10,19 @@ alert (iPhone);
 let im = ('Брендан Айх');
 alert (im);
 
-let a = 10;
-let b = 2;
-let sum = a + b;
-let difference =a - b;
-let product = a*b;
-let quotient =a/b;
+let t = 10;
+let r = 2;
+let sum = t + r;
+let difference =t - r;
+let product = t*r;
+let quotient =t/r;
 alert(sum,);
 alert(difference);
 alert(product)
 alert(quotient);
 
-let b = 2;
-let result = b**5;
+let i = 2;
+let result = i**5;
 alert(result);
 
 let k = 9;
@@ -43,10 +43,10 @@ alert(num);
 let age = prompt('Сколько вам лет?');
 alert(age);
 
-const user {
-    name:"Шарик",
-    age:"2",
-    isAdmin:true,
+const user = {
+    name: "Иван Иванов",    
+    age: 30,                
+    isAdmin: false        
 };
 
 let name = prompt('Как вас зовут?');
