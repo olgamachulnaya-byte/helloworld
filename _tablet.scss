@@ -146,6 +146,17 @@
         justify-content: flex-start;
         align-items: flex-start;
     }
+    .mini-igri__igra1 {
+        margin-top: 28px;
+        width: 663px;
+    }
+    .mini-igri__igra {
+        width: 663px;
+    }
+    .mini-igri__igra2 {
+        width: 663px;
+        height: 286px;
+    }
     .mini-igra__infor {
         display: flex;
         flex-direction: row;
@@ -157,6 +168,9 @@
         letter-spacing: 0px;
         text-align: left;
         padding-top: 6px;
+    }
+    .mini-igri__content {
+        padding: 20px;
     }
     .mini-igri__button {
         display: flex;
