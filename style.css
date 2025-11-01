@@ -779,6 +779,7 @@ body {
     top: -104px;
     left: 230px;
     height: 238.57px;
+    width: 223.52px;
   }
   .hero-page__img4 {
     display: none;
@@ -823,7 +824,7 @@ body {
     line-height: 100%;
     letter-spacing: 0px;
     text-align: center;
-    margin-left: 57px;
+    padding-left: 57px;
   }
   .header-subtitle {
     height: 60px;
@@ -836,7 +837,7 @@ body {
     line-height: 100%;
     letter-spacing: 0px;
     text-align: center;
-    margin-top: -24px;
+    padding-left: 24px;
   }
   .header-button {
     margin-left: 46px;
