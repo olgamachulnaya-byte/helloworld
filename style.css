@@ -45,55 +45,47 @@ body {
   position: absolute;
   top: -333px;
   right: -488px;
-  left: 929px;
 }
 
 .hero-page__img4 {
   position: absolute;
   top: -10px;
   right: 269px;
-  left: 854px;
 }
 
 .hero-page__img5 {
   position: absolute;
   top: 254px;
-  left: 1067px;
   right: 231px;
 }
 
 .hero-page__img6 {
   position: absolute;
   top: 379px;
-  left: 1225px;
   right: 5px;
 }
 
 .hero-page__img8 {
   position: absolute;
   top: 468px;
-  left: 1247px;
   right: 113px;
 }
 
 .hero-page__img7 {
   position: absolute;
   top: 663px;
-  left: 1347px;
   right: 61px;
 }
 
 .hero-page__img9 {
   position: absolute;
   top: 538px;
-  left: 948px;
   right: 455px;
 }
 
 .hero-page__img10 {
   position: absolute;
   top: 568px;
-  left: 1013px;
   right: 344px;
 }
 
@@ -247,7 +239,6 @@ body {
 .content-star {
   position: absolute;
   top: 77px;
-  left: 933px;
   right: -143px;
   z-index: 1;
 }
@@ -255,14 +246,12 @@ body {
 .content-star2 {
   position: absolute;
   top: 770px;
-  left: 25px;
   right: 1381px;
 }
 
 .content-star3 {
   position: absolute;
   top: 822px;
-  left: 40px;
   right: 1341px;
 }
 
@@ -393,28 +382,24 @@ body {
 .mini-igri__star {
   position: absolute;
   top: 94px;
-  left: 1277px;
   right: 124px;
 }
 
 .mini-igri__star2 {
   position: absolute;
   top: 126px;
-  left: 1320px;
   right: 45px;
 }
 
 .mini-igri__star3 {
   position: absolute;
   top: 3366px;
-  left: 1319px;
   right: 52px;
 }
 
 .mini-igri__star4 {
   position: absolute;
   top: 3414px;
-  left: 1249px;
   right: 150px;
 }
 
@@ -472,7 +457,7 @@ body {
   background: rgb(255, 255, 255);
 }
 
-.mini-igra__img {
+.mini-igri__img {
   width: 600px;
   height: 500px;
 }
@@ -486,7 +471,7 @@ body {
   padding: 48px;
 }
 
-.mini-igra__name {
+.mini-igri__name {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -499,7 +484,7 @@ body {
   text-align: left;
 }
 
-.mini-igra__infor {
+.mini-igri__infor {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -657,6 +642,15 @@ body {
   .igra-mini__img {
     width: 320px;
   }
+  .igra-mini2__img {
+    width: 320px;
+  }
+  .igra-mini3__img {
+    width: 320px;
+  }
+  .igra-mini4__img {
+    width: 320px;
+  }
   .igra-name {
     font-size: 28px;
     font-weight: 600;
@@ -671,12 +665,12 @@ body {
     padding-left: 64px;
     font-size: 49px;
   }
-  .mini-igra__img {
+  .mini-igri__img {
     width: 320px;
     border-radius: 30px;
     height: 284.93px;
   }
-  .mini-igra__name {
+  .mini-igri__name {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -711,7 +705,7 @@ body {
     width: 663px;
     height: 286px;
   }
-  .mini-igra__infor {
+  .mini-igri__infor {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -918,12 +912,12 @@ body {
     justify-content: flex-start;
     align-items: flex-start;
   }
-  .mini-igra__img {
+  .mini-igri__img {
     width: 343px;
     border-radius: 30px;
     height: 284.93px;
   }
-  .mini-igra__name {
+  .mini-igri__name {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -967,7 +961,7 @@ body {
     justify-content: flex-start;
     align-items: flex-start;
   }
-  .mini-igra__infor {
+  .mini-igri__infor {
     display: flex;
     flex-direction: row;
     align-items: center;
