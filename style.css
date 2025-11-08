@@ -793,13 +793,13 @@ body {
   .hero-page__img9 {
     width: 18px;
     height: 18px;
-    top: 557px;
+    top: 520px;
     left: 272px;
   }
   .hero-page__img10 {
     width: 39px;
     height: 41px;
-    top: 580px;
+    top: 530px;
     left: 303px;
   }
   .header {
@@ -853,6 +853,21 @@ body {
     line-height: 20px;
     letter-spacing: 0%;
     text-align: center;
+    width: 285px;
+    height: 55px;
+  }
+  .header-button:hover {
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 60px;
+    color: rgb(0, 0, 0);
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    background-color: white;
     width: 285px;
     height: 55px;
   }
@@ -1008,6 +1023,18 @@ body {
     letter-spacing: 0%;
     text-align: center;
     background-color: white;
+  }
+  .mini-igri__star {
+    display: none;
+  }
+  .mini-igri__star2 {
+    display: none;
+  }
+  .mini-igri__star3 {
+    display: none;
+  }
+  .mini-igri__star4 {
+    display: none;
   }
   .footer {
     height: 100px;
