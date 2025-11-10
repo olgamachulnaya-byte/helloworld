@@ -28,6 +28,18 @@
         width: 600px;
         left: 420px;
     }
+    .hero-page__img4 {
+        display: none;
+    }
+     .hero-page__img5 {
+        display: none;
+    }
+     .hero-page__img6 {
+        display: none;
+    }
+     .hero-page__img8 {
+        display: none;
+    }
     .hero-page__img9 {
         left: 570px;
         top: 460px;
@@ -49,7 +61,6 @@
     }
     .content {
         height: 100%;
-    width: 768px;
     }
     .content-title {
        padding-left: 64px;
@@ -120,8 +131,14 @@
         flex-wrap: wrap;
         padding-left: 64px;
     }
+    .mini-igri__star {
+        display: none;
+    }
+    .mini-igri__star2 {
+        display: none;
+    }
     .mini-igri__title {
-       padding-left: 64px;
+      
        font-size: 49px;
     }
      
