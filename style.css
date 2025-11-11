@@ -539,10 +539,10 @@ body {
   justify-content: space-around;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .center {
-    padding-left: calc(50% - 393px);
-    padding-right: calc(50% - 393px);
+    padding-left: calc(50% - 329px);
+    padding-right: calc(50% - 329px);
   }
   .header {
     padding-top: 170px;
@@ -565,9 +565,8 @@ body {
   }
   .hero-page__img3 {
     top: -270px;
-    right: -700px;
+    right: -270px;
     width: 600px;
-    left: 420px;
   }
   .hero-page__img4 {
     display: none;
@@ -604,13 +603,11 @@ body {
     height: 100%;
   }
   .content-title {
-    padding-left: 64px;
     font-size: 49px;
     padding-top: 55px;
   }
   .content-subtitle {
     padding-top: 10px;
-    padding-left: 64px;
     font-size: 22px;
     font-weight: 350;
   }
@@ -627,8 +624,6 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 18px;
-    padding-left: 64px;
-    margin-top: -20px;
     flex-direction: row;
     align-items: flex-end;
   }
@@ -663,14 +658,13 @@ body {
     width: 320px;
   }
   .igra-name {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 600;
   }
   .mini-igri {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-left: 64px;
   }
   .mini-igri__star {
     display: none;
@@ -787,7 +781,7 @@ body {
   }
   .hero-page__img3 {
     top: -104px;
-    left: 230px;
+    right: -100px;
     height: 238.57px;
     width: 223.52px;
   }
