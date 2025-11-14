@@ -634,6 +634,7 @@ body {
     gap: 18px;
     flex-direction: row;
     align-items: flex-end;
+    padding-bottom: 30px;
   }
   .igra-mini {
     width: 320px;

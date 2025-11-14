@@ -1,41 +1,52 @@
 
+    (function () {
+      // Генерация числа от 1 до 100
+      let secret = Math.floor(Math.random() * 100) + 1;
+      let attempts = 0;
+      let finished = false;
 
-console.log("Привет");
-console.log("Привет");
+      // Функция подсказки через alert-подсказку
+      function promptGuess() {
+        // Запросить у пользователя ввод через prompt
+        const input = prompt("Угадайте число от 1 до 100:");
+        if (input === null) {
+          // Пользователь отменил ввод
+          alert("Игра окончена. Спасибо за игру!");
+          return;
+        }
+        const guess = Number(input);
+        if (Number.isNaN(guess) || guess < 1 || guess > 100) {
+          alert("Пожалуйста, введите число от 1 до 100.");
+          promptGuess();
+          return;
+        }
 
-for (let i = 1; i <= 5; i++) {
-  console.log(i);
-}
+        attempts++;
+        if (guess === secret) {
+          alert(`Поздравляю! Вы угадали число ${secret} за ${attempts} попыток.`);
+          finished = true;
+          // Опционально: можно предложить начать заново
+          const снова = confirm("Хотите сыграть ещё раз?");
+          if (снова) {
+            // Сбрасываем состояние и запускаем новую игру
+            secret = Math.floor(Math.random() * 100) + 1;
+            attempts = 0;
+            finished = false;
+            promptGuess();
+          }
+          return;
+        } else if (guess < secret) {
+          alert("Загаданное число больше вашего.");
+          promptGuess();
+        } else {
+          alert("Загаданное число меньше вашего.");
+          promptGuess();
+        }
+      }
 
-for (let i = 7; i <= 22; i++) {
-  console.log(i);
-}
-
-const obj = {
-  "Коля": '200',
-  "Вася": '300',
-  "Петя": '400'
-};
-
-for (let key in obj) {
-  console.log(`${key} — зарплата ${obj[key]} долларов.`);
-}
-
-
-let n = 1000;
-let num = 0;
-
-while (n >= 50) {
-  n = n / 2;
-  num++;
-}
-
-console.log("Результат:", n);
-console.log("Количество итераций:", num);
-
-const firstFriday = 3; // например, первая пятница — 3-е число месяца
-const daysInMonth = 31;
-
-for (let day = firstFriday; day <= daysInMonth; day += 7) {
-  console.log(`Сегодня пятница, ${day}-е число. Необходимо подготовить отчет.`);
-}
+      // Запуск игры
+       function promptGuess() {
+        alert("Началась новая игра: загаданное число от 1 до 100.");
+      promptGuess();
+       }
+    })();
