@@ -1,49 +1,46 @@
- (function promptGuess() {
-      // Генерация числа от 1 до 100
-      let secret = Math.floor(Math.random() * 100) + 1;
-      let attempts = 0;
-      let finished = false;
+let targetNumber; // загаданное число
 
-      // Функция подсказки через alert-подсказку
-      function promptGuess() {
-        // Запросить у пользователя ввод через prompt
-        const input = prompt("Угадайте число от 1 до 100:");
-        if (input === null) {
-          // Пользователь отменил ввод
-          alert("Игра окончена. Спасибо за игру!");
-          return;
-        }
-        const guess = Number(input);
-        if (Number.isNaN(guess) || guess < 1 || guess > 100) {
-          alert("Пожалуйста, введите число от 1 до 100.");
-          promptGuess();
-          return;
-        }
+function startGuessGame() {
+// сгенерировать число от 1 до 100
+targetNumber = Math.floor(Math.random() * 100) + 1;
 
-        attempts++;
-        if (guess === secret) {
-          alert(`Поздравляю! Вы угадали число ${secret} за ${attempts} попыток.`);
-          finished = true;
-          // Опционально: можно предложить начать заново
-          const снова = confirm("Хотите сыграть ещё раз?");
-          if (снова) {
-            // Сбрасываем состояние и запускаем новую игру
-            secret = Math.floor(Math.random() * 100) + 1;
-            attempts = 0;
-            finished = false;
-            promptGuess();
-          }
-          return;
-        } else if (guess < secret) {
-          alert("Загаданное число больше вашего.");
-          promptGuess();
-        } else {
-          alert("Загаданное число меньше вашего.");
-          promptGuess();
-        }
-      }
+// приветствие и начало игры в мини-окне через alert
+alert("Угадайте число от 1 до 100. Я загадал число. Удачи!");
 
-      // Запуск игры
-      alert("Началась новая игра: загаданное число от 1 до 100.");
-      promptGuess();
-    })();
+// запуск цикла угадывания
+askGuess();
+}
+
+function askGuess() {
+// показать подсказку и получить ввод
+let userInput = prompt("Введите ваше предположение (целое число от 1 до 100):");
+
+// обработка отмены (пользователь закрыл окно prompt)
+if (userInput === null) {
+alert("Игра окончена. Спасибо за участие!");
+return;
+}
+
+// преобразовать ввод к числу
+const guess = Number(userInput);
+
+// валидация ввода
+if (!Number.isFinite(guess) || !Number.isInteger(guess) || guess < 1 || guess > 100) {
+alert("Пожалуйста, введите целое число от 1 до 100.");
+askGuess();
+return;
+}
+
+// сравнение с загаданным числом
+if (guess === targetNumber) {
+alert("Поздравляем! Вы угадали число " + targetNumber + "!");
+return;
+} else if (guess < targetNumber) {
+alert("Загаданное число больше вашего предположения.");
+} else {
+alert("Загаданное число меньше вашего предположения.");
+}
+
+// повторный запрос
+askGuess();
+}

@@ -534,6 +534,20 @@ body {
   width: 247px;
 }
 
+.mini-igri__button:hover {
+  box-sizing: border-box;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 60px;
+  color: rgb(0, 0, 0);
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: center;
+  background-color: white;
+}
+
 .footer {
   background: rgb(189, 237, 53);
   overflow: hidden;

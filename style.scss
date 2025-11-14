@@ -486,6 +486,19 @@ text-transform: uppercase;
     margin-top:  36px;
     width: 247px;
 }
+.mini-igri__button:hover {
+  box-sizing: border-box;
+border: 1px solid rgba(0, 0, 0, 1);
+border-radius: 60px;
+color: rgba(0, 0, 0, 1);
+font-family: "Montserrat";
+font-size: 24px;
+font-weight: 600;
+line-height: 29px;
+letter-spacing: 0%;
+text-align: center;
+background-color: white;
+}
 .footer {
    background: rgba(189, 237, 53, 1);
    overflow: hidden;
