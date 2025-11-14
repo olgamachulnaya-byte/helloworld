@@ -399,10 +399,8 @@ text-transform: uppercase;
 .mini-igri__igra {
     margin-top:  32px;
     display: flex;
-    justify-content: space-between;
     flex-direction: row;
     align-items: flex-start;
-    flex-direction: row-reverse;
     border-radius: 30px;
     box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
     background: rgba(255, 255, 255, 1);
@@ -418,6 +416,17 @@ text-transform: uppercase;
     border-radius: 30px;
     box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
     background: rgba(255, 255, 255, 1);
+}
+.mini-igri__igra3{
+    margin-top: 32px;
+    display: flex;
+    align-items: flex-start;
+    border-radius: 30px;
+    box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
+    background: rgb(255, 255, 255);
+    justify-content: space-between;
+    align-content: stretch;
+    flex-direction: row-reverse;
 }
 .mini-igri__img {
     width: 600px;
