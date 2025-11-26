@@ -44,3 +44,37 @@ alert("Загаданное число меньше вашего предпол�
 // повторный запрос
 askGuess();
 }
+
+
+    // Функция для генерации случайного числа от min до max включительно
+    function getRandomInt(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    // Функция для генерации арифметической задачи
+    function generateTask() {
+      const operations = ['+', '-', '*', '/'];
+      const operand1 = getRandomInt(1, 20);
+      const operand2 = getRandomInt(1, 20);
+      const operation = operations[getRandomInt(0, operations.length - 1)];
+
+      // Для деления делимое должно быть кратно делителю, чтобы результат был целым числом
+      if (operation === '/') {
+        const dividend = operand1 * operand2; // гарантия целого результата
+        return `${dividend} / ${operand2}`;
+      }
+      return `${operand1} ${operation} ${operand2}`;
+    }
+
+    // Функция для запроса ответа у пользователя и проверки его
+    function askAndCheck() {
+      const task = generateTask();
+      const userAnswer = prompt(`Решите задачу: ${task}`);
+      const correctAnswer = eval(task);
+
+      if (Number(userAnswer) === correctAnswer) {
+        alert('Верный ответ!');
+      } else {
+        alert(`Ошибка. Правильный ответ: ${correctAnswer}`);
+      }
+    }
