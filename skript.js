@@ -78,3 +78,47 @@ askGuess();
         alert(`Ошибка. Правильный ответ: ${correctAnswer}`);
       }
     }
+
+
+    const quiz = [
+    {
+        question: "Какой цвет небо?",
+        options: ["1. Красный", "2. Синий", "3. Зеленый"],
+        correctAnswer: 2
+    },
+    {
+        question: "Сколько дней в неделе?",
+        options: ["1. Шесть", "2. Семь", "3. Восемь"],
+        correctAnswer: 2
+    },
+    {
+        question: "Сколько у человека пальцев на одной руке?",
+        options: ["1. Четыре", "2. Пять", "3. Шесть"],
+        correctAnswer: 2
+    }
+];
+
+// Функция для запуска викторины
+function startQuiz() {
+    let correctCount = 0;
+
+    for (let i = 0; i < quiz.length; i++) {
+        const q = quiz[i];
+        const answer = prompt(q.question + "\n" + q.options.join("\n"));
+        if (parseInt(answer) === q.correctAnswer) {
+            correctCount++;
+        }
+    }
+
+    alert("Правильных ответов: " + correctCount);
+}
+
+// Функция для переворачивания текста
+function reverseText() {
+    // Запрашиваем у пользователя текст
+    const input = prompt("Введите текст:");
+    // Переворачиваем текст
+    const reversed = input.split("").reverse().join("");
+    // Выводим перевёрнутый текст
+    alert("Перевёрнутый текст: " + reversed);
+}
