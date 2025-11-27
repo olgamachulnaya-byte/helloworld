@@ -122,3 +122,36 @@ function reverseText() {
     // Выводим перевёрнутый текст
     alert("Перевёрнутый текст: " + reversed);
 }
+
+function playRPS() {
+  const options = ["камень", "ножницы", "бумага"];
+
+  // Запрашиваем выбор пользователя
+  let userChoice = prompt("Выберите: камень, ножницы или бумага");
+  if (!userChoice) return alert("Игра отменена");
+
+  userChoice = userChoice.toLowerCase();
+  if (!options.includes(userChoice)) {
+    return alert("Некорректный выбор. Пожалуйста, выберите камень, ножницы или бумага.");
+  }
+
+  // Выбор компьютера
+  const computerChoice = options[Math.floor(Math.random() * options.length)];
+
+  // Определение результата
+  let result = "";
+  if (userChoice === computerChoice) {
+    result = "Ничья!";
+  } else if (
+    (userChoice === "камень" && computerChoice === "ножницы") ||
+    (userChoice === "ножницы" && computerChoice === "бумага") ||
+    (userChoice === "бумага" && computerChoice === "камень")
+  ) {
+    result = "Вы победили!";
+  } else {
+    result = "Вы проиграли!";
+  }
+
+  // Вывод результата
+  alert(`Вы выбрали: ${userChoice}\nКомпьютер выбрал: ${computerChoice}\n${result}`);
+}
