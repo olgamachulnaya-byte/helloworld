@@ -90,8 +90,8 @@ function getLengths(arr) {
   return arr.map(str => str.length);
 }
 
-const inputArray = ["hello", "world", "javascript"];
-const lengthsArray = getLengths(inputArray);
+const inputArray1 = ["hello", "world", "javascript"];
+const lengthsArray = getLengths(inputArray1);
 console.log(lengthsArray); // выведет [5, 5, 10]
 
 //Задание 13
@@ -100,8 +100,8 @@ function getNegativeNumbers(arr) {
   return arr.filter(num => num < 0);
 }
 
-const inputArray = [1, -2, 3, -4, 0, -5, 6];
-const negativeArray = getNegativeNumbers(inputArray);
+const inputArray2 = [1, -2, 3, -4, 0, -5, 6];
+const negativeArray = getNegativeNumbers(inputArray2);
 console.log(negativeArray); // выведет [-2, -4, -5]
 
 //Задание 14
