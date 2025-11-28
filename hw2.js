@@ -50,7 +50,16 @@ console.log(getRandomInRange(5, 10)); // Например, 7
 const currentDate = new Date();
 console.log(currentDate);
 
-//Задание 9
+//Задание 9 
+const currentDate1 = new Date();
+const futureDate = new Date(currentDate1);
+futureDate.setDate(currentDate1.getDate() + 73);
+
+console.log(futureDate.toISOString().split('T')[0]);
+
+
+
+//Задание 10
 function formatDate(date) {
     const months = ["января", "февраля", "марта", "апреля", "мая", "июня",
                     "июля", "августа", "сентября", "октября", "ноября", "декабря"];

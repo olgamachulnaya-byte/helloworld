@@ -8,12 +8,10 @@ for (let i = 0; i < arr.length; i++) {
   }
 }
 // Задание 2
-const arr1 = [1, 4, 5, 2, 4, 3];
-for (let i = 0; i < arr1.length; i++) {
-  if (arr1[i] === 4) {
-    console.log('Найдено значение 4');
-  }
-}
+const array = [1, 5, 4, 10, 0, 3];
+const index = array.indexOf(4);
+console.log(index); // выведет 2
+
 // Задание 3
 const arr2 = [1, 3, 5, 10, 20];
 const result = arr2.join(' ');
@@ -78,17 +76,34 @@ for (let i = 0; i < numbers1.length - 1; i++) {
   console.log(sum);
 }
 //Задание 11
-function squareNumbers(arr) {
+
+ function squareArray(arr) {
   return arr.map(num => num * num);
 }
+
+const inputArray = [1, 2, 3, 4, 5];
+const squaredArray = squareArray(inputArray);
+console.log(squaredArray); // выведет [1, 4, 9, 16, 25]
+
 //Задание 12
 function getLengths(arr) {
-  return arr.map(word => word.length);
+  return arr.map(str => str.length);
 }
+
+const inputArray = ["hello", "world", "javascript"];
+const lengthsArray = getLengths(inputArray);
+console.log(lengthsArray); // выведет [5, 5, 10]
+
 //Задание 13
+
 function getNegativeNumbers(arr) {
   return arr.filter(num => num < 0);
 }
+
+const inputArray = [1, -2, 3, -4, 0, -5, 6];
+const negativeArray = getNegativeNumbers(inputArray);
+console.log(negativeArray); // выведет [-2, -4, -5]
+
 //Задание 14
 const numbers2 = [];
 
