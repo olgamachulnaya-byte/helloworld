@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Добавление элементов</title>
+</head>
+<body>
+    <button id="addBtn">Добавить элемент</button>
+
+    <script>
+        const button = document.querySelector('#addBtn');
+
+        button.addEventListener('click', () => {
+            const newParagraph = document.createElement('p');
+            newParagraph.textContent = 'Новый абзац';
+            document.body.appendChild(newParagraph);
+        });
+    </script>
+</body>
+</html>

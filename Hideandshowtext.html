@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Скрыть/Показать заголовок</title>
+</head>
+<body>
+    <h1>Это заголовок, который можно скрыть</h1>
+    <button id="toggleBtn">Скрыть</button>
+
+    <script>
+        const header = document.querySelector('h1');
+        const button = document.querySelector('#toggleBtn');
+
+        button.addEventListener('click', () => {
+            if (header.style.display === 'none') {
+                header.style.display = 'block';
+                button.textContent = 'Скрыть';
+            } else {
+                header.style.display = 'none';
+                button.textContent = 'Показать';
+            }
+        });
+    </script>
+</body>
+</html>

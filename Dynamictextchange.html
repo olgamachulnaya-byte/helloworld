@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Изменение текста заголовка</title>
+</head>
+<body>
+    <h1 id="header">Исходный текст заголовка</h1>
+    <button id="textBtn">Изменить текст</button>
+
+    <script>
+        const header = document.querySelector('#header');
+        const button = document.querySelector('#textBtn');
+
+        button.addEventListener('click', () => {
+            header.textContent = 'Привет, мир!';
+        });
+    </script>
+</body>
+</html>
