@@ -155,3 +155,43 @@ function playRPS() {
   // Вывод результата
   alert(`Вы выбрали: ${userChoice}\nКомпьютер выбрал: ${computerChoice}\n${result}`);
 }
+
+  // Генерация случайного цвета в формате hex
+  function getRandomColor() {
+    const hex = Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0');
+    return `#${hex.toUpperCase()}`;
+  }
+
+  // Приближённая светлота для контраста кнопки
+  function getLuminance(hexColor) {
+    const r = parseInt(hexColor.substr(1,2), 16) / 255;
+    const g = parseInt(hexColor.substr(3,2), 16) / 255;
+    const b = parseInt(hexColor.substr(5,2), 16) / 255;
+    const srgb = [r,g,b].map(v => (v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4)));
+    return 0.2126 * srgb[0] + 0.7152 * srgb[1] + 0.0722 * srgb[2];
+  }
+
+  // Основная функция: меняет фон элемента .mini-igri
+  function randomizeArenaColor() {
+    const color = getRandomColor();
+
+    // Фон именно элемента с классом .mini-igri
+    const arena = document.querySelector('.mini-igri');
+    if (arena) {
+      arena.style.backgroundColor = color;
+    }
+
+    // Контраст текста кнопки
+    const luminance = getLuminance(color);
+    const btn = document.querySelector('.mini-igri__button');
+    if (btn) {
+      btn.style.color = luminance > 0.55 ? '#000000' : '#FFFFFF';
+    }
+
+    // Пример: можно вывести цвет в alert/prompt, если нужно
+    // alert(`Сгенерирован новый цвет: ${color}`);
+    // prompt('Продолжить?', 'да');
+  }
+
+  // По желанию: задать первый цвет при загрузке
+  // window.addEventListener('DOMContentLoaded', randomizeArenaColor);
