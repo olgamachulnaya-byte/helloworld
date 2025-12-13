@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Удаление первого элемента description</title>
+</head>
+<body>
+    <p class="description">Первый description</p>
+    <p class="other">Обычный текст</p>
+    <p class="description">Второй description</p>
+    <p>Без класса</p>
+
+    <button id="deleteBtn">Удалить элемент</button>
+
+    <script>
+        const button = document.querySelector('#deleteBtn');
+
+        button.addEventListener('click', () => {
+            const firstDescription = document.querySelector('.description');
+            if (firstDescription) {
+                firstDescription.remove();
+            }
+        });
+    </script>
+</body>
+</html>

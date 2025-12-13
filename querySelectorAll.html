@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Изменение текста description</title>
+</head>
+<body>
+    <p class="description">Первый description</p>
+    <p class="other">Обычный текст</p>
+    <p class="description">Второй description</p>
+    <p>Без класса</p>
+
+    <script>
+        const descriptions = document.querySelectorAll('.description');
+        descriptions.forEach(element => {
+            element.textContent = 'Новый текст';
+        });
+    </script>
+</body>
+</html>

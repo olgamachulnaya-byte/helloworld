@@ -25,8 +25,6 @@ body {
 }
 .hero-page {
     background: rgba(225, 255, 143, 1);
-    width: 1440px;
-    height: 800px;
     position: relative
 }
 .hero-page__img2 {
@@ -43,48 +41,42 @@ body {
     position: absolute;
     top: -333px;
     right: -488px ;
-    left: 929px;
+    
 }
 .hero-page__img4 {
     position: absolute;
     top: -10px;
     right: 269px;
-    left: 854px;
+    
 }
 .hero-page__img5 {
     position: absolute;
     top: 254px;
-    left: 1067px;
     right: 231px;
 }
 .hero-page__img6 {
     position: absolute;
     top: 379px;
-    left: 1225px;
     right: 5px;
 }
 .hero-page__img8 {
     position: absolute;
     top: 468px;
-    left: 1247px;
     right: 113px;
 }
 .hero-page__img7 {
     position: absolute;
     top: 663px;
-    left: 1347px;
     right: 61px;
 }
 .hero-page__img9 {
     position: absolute;
     top: 538px;
-    left: 948px;
     right: 455px;
 }
 .hero-page__img10 {
     position: absolute;
     top: 568px;
-    left: 1013px;
     right: 344px;
 }
 .header {
@@ -102,7 +94,7 @@ body {
     line-height: 100%;
     letter-spacing: 0px;
     text-align: left;
-    
+    white-space: pre-line;
 }
 .header-subtitle {
     flex-direction: row;
@@ -115,6 +107,7 @@ body {
     letter-spacing: 0px;
     text-align: left;
     padding-top: 24px;
+    white-space: pre-line;
 }
 .header-span {
 font-weight: 600;
@@ -160,7 +153,7 @@ background-color: white;
     gap:51px;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 10;
+    gap: 10px;
     margin-top: 155px;
     margin-left: -300px;
     margin-right: -1500px;
@@ -186,11 +179,27 @@ line-height: 37px;
 letter-spacing: 4%;
 text-align: left;
 text-transform: uppercase;
+}
 
+
+.strip {
+display: inline-flex;
+align-items: center;
+white-space: nowrap;
+animation: scroll-left 10s linear infinite;
+}
+
+/* Анимация прокрутки: движение содержимого влево */
+@keyframes scroll-left {
+from {
+transform: translateX(0);
+}
+to {
+transform: translateX(-50%);
+}
 }
 .content {
     background: rgba(32, 32, 39, 1);
-    width: 1440px;
     height: 1470px;
     position: relative;
     z-index: 0;
@@ -212,7 +221,6 @@ text-transform: uppercase;
     padding-top: 94px;
 }
 .content-subtitle {
-    width: 788px;
     height: 96px;
     display: flex;
     flex-direction: row;
@@ -225,25 +233,23 @@ text-transform: uppercase;
     letter-spacing: 0px;
     text-align: left;
     padding-top: 24px;
+    white-space: pre-line;
 
 }
 .content-star {
    position: absolute;
    top: 77px;
-   left: 933px;
    right: -143px;
    z-index: 1;
 }
 .content-star2 {
     position: absolute;
     top: 770px;
-    left: 25px;
     right: 1381px;
 }
 .content-star3 {
     position: absolute;
     top: 822px;
-    left: 40px;
     right: 1341px;
 }
 .igra {
@@ -316,6 +322,7 @@ text-transform: uppercase;
     letter-spacing: 0px;
     text-align: left;
     margin-top: 16px;
+    white-space: pre-line;
 
 }
 .igra-mini2 {  
@@ -356,32 +363,27 @@ text-transform: uppercase;
 }
 .mini-igri {
     position: relative;
-    width: 1440px;
-    height: 3500px;
     background: rgba(32, 32, 39, 1);
+    padding-bottom: 134px;
 }
 .mini-igri__star {
    position: absolute;
    top: 94px;
-   left: 1277px;
    right: 124px;
 }
 .mini-igri__star2 {
     position: absolute;
     top: 126px;
-    left: 1320px;
     right: 45px;
 }
 .mini-igri__star3 {
     position: absolute;
     top: 3366px;
-    left: 1319px;
     right: 52px;
 }
 .mini-igri__star4 {
     position: absolute;
     top: 3414px;
-    left: 1249px;
     right: 150px;
 }
 .mini-igri__title {
@@ -401,12 +403,11 @@ text-transform: uppercase;
 }
 .mini-igri__igra1 {
     margin-top:  72px;
-    width: 1200px;
-    height: 500px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
+    justify-content: space-between;
     flex-direction: row-reverse;
     border-radius: 30px;
     box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
@@ -414,13 +415,9 @@ text-transform: uppercase;
 }
 .mini-igri__igra {
     margin-top:  32px;
-    width: 1200px;
-    height: 500px;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
     align-items: flex-start;
-    flex-direction: row-reverse;
     border-radius: 30px;
     box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
     background: rgba(255, 255, 255, 1);
@@ -437,7 +434,18 @@ text-transform: uppercase;
     box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
     background: rgba(255, 255, 255, 1);
 }
-.mini-igra__img {
+.mini-igri__igra3{
+    margin-top: 32px;
+    display: flex;
+    align-items: flex-start;
+    border-radius: 30px;
+    box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
+    background: rgb(255, 255, 255);
+    justify-content: space-between;
+    align-content: stretch;
+    flex-direction: row-reverse;
+}
+.mini-igri__img {
     width: 600px;
     height: 500px;
 }
@@ -446,12 +454,10 @@ text-transform: uppercase;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 10;
+    gap: 10px;
     padding: 48px;
-    width: 600px;
-    height: 500px;
 }
-.mini-igra__name { 
+.mini-igri__name { 
    display: flex;
    flex-direction: row;
    align-items: center;
@@ -462,8 +468,9 @@ text-transform: uppercase;
    line-height: 100%;
    letter-spacing: 0px;
    text-align: left;
+   white-space: pre-line;
 }
-.mini-igra__infor {
+.mini-igri__infor {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -474,7 +481,8 @@ text-transform: uppercase;
     line-height: 32px;
     letter-spacing: 0px;
     text-align: left;
-    margin-top:  24px;
+    padding-top:  24px;
+    white-space: pre-line;
 }
 .mini-igri__button {
     display: flex;
@@ -495,5 +503,39 @@ text-transform: uppercase;
     margin-top:  36px;
     width: 247px;
 }
+.mini-igri__button:hover {
+  box-sizing: border-box;
+border: 1px solid rgba(0, 0, 0, 1);
+border-radius: 60px;
+color: rgba(0, 0, 0, 1);
+font-family: "Montserrat";
+font-size: 24px;
+font-weight: 600;
+line-height: 29px;
+letter-spacing: 0%;
+text-align: center;
+background-color: white;
+}
+.footer {
+   background: rgba(189, 237, 53, 1);
+   overflow: hidden;
+}
+.footer-text {
+    color: rgba(0, 0, 0, 1);
+    font-family: "Montserrat";
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+    justify-content: space-around
+
+}
+
 @import "tablet";
 @import "mobile";

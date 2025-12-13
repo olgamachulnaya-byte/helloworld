@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Изменение цвета текста</title>
+</head>
+<body>
+    <p id="text">Этот текст можно окрасить в синий цвет!</p>
+    <button id="colorBtn">Изменить цвет</button>
+
+    <script>
+        const paragraph = document.querySelector('#text');
+        const button = document.querySelector('#colorBtn');
+
+        button.addEventListener('click', () => {
+            paragraph.style.color = 'blue';
+        });
+    </script>
+</body>
+</html>
